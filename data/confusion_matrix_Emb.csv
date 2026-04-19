@@ -1,0 +1,8 @@
+True\Predicted,banana,harddisk,pouch,ruler,vessel,watch
+banana,0,0,0,0,0,0
+harddisk,0,1,2,0,0,0
+pouch,0,2,2,0,0,0
+ruler,0,0,0,3,0,0
+vessel,0,0,0,0,2,1
+watch,0,1,0,0,0,2
+Accuracy,62.5%
