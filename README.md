@@ -103,7 +103,7 @@ Five rotation/scale/translation-invariant features are computed per region:
 ### System 1 — Hand-Crafted K-NN (Scaled Euclidean Distance)
 
 <p align="center">
-  <img src="images/classification_hc.png" width="500"/>
+  <img src="images/classification_hc.png" width="400"/>
 </p>
 
 The five geometric features are scaled by their standard deviations and matched against stored training samples using scaled Euclidean distance. The nearest neighbour label is assigned. Objects with a distance above a threshold are flagged as **"unknown"** in red — enabling open-set rejection.
@@ -113,7 +113,7 @@ The five geometric features are scaled by their standard deviations and matched 
 ### System 2 — One-Shot ResNet18 Embedding Classifier
 
 <p align="center">
-  <img src="images/classification_emb.png" width="500"/>
+  <img src="images/classification_emb.png" width="400"/>
 </p>
 
 Each detected region is:
@@ -131,7 +131,8 @@ The preprocessed image is passed through a pre-trained **ResNet18 ONNX model**. 
 ## Performance Comparison
 
 <p align="center">
-  <img src="images/confusion_matrices.png" width="600"/>
+  <img src="images/confusion_mat_hc.png" width="400"/>
+  <img src="images/confusion_mat_emb.png" width="400"/>
 </p>
 
 | System | Accuracy | Notes |
